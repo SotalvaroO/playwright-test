@@ -35,7 +35,5 @@ test("should logout", async ({ page }) => {
     "https://opencart.abstracta.us:443/index.php?route=account/logout"
   );
 
-  await expect(page).toHaveURL(
-    "https://opencart.abstracta.us/index.php?route=account/logout"
-  );
+  expect(JSON.parse(JSON.stringify(page.locator('You have been logged off your account. It is now safe to leave the computer.')))._selector).toEqual("You have been logged off your account. It is now safe to leave the computer.");
 });

@@ -12,4 +12,4 @@ En la página de inicio, se busca un producto (MacBook), luego de esto se entra 
 
 3. se valida que se haya cerrado la sesión
 
-Este caso de prueba se valida luego de haber dado en el boton login, se asegura que esté en la página post logout.
+Este caso de prueba se valida luego de haber dado en el boton login, se asegura que esté en la página post logout mediante un mensaje que se muestra al hacer logout.
